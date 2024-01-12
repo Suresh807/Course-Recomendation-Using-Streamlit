@@ -25,9 +25,9 @@ def recommend(course):
 
     return recommended_course_names
 
-st.markdown("<h2 style='text-align: center; color: blue;'> Course Recommendation System</h2>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: white;'>Find similar courses from a dataset of over 3,000 courses from Coursera!</h4>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: white;'>Web App created by Sai sharvesh & team </h4>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: blue;'>Course Recommendation System</h2>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: red;'>Find similar courses from a dataset of over 3,000 courses</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: red;'>Web App created by Sai Sharvesh R,Suresh Kumar K,Sabthagiri P</h4>", unsafe_allow_html=True)
 
 course_list = courses_list['course_name'].values
 selected_course = st.selectbox(
@@ -45,6 +45,6 @@ if st.button('Show Recommended Courses'):
     st.text(recommended_course_names[4])
     st.text(recommended_course_names[5])
     st.text(" ")
-    st.markdown("<h6 style='text-align: center; color: red;'>Copyright reserved by Respective Course Owners</h6>", unsafe_allow_html=True)
+    # <====st.markdown("<h6 style='text-align: center; color: red;'>Copyright reserved by Coursera and Respective Course Owners</h6>", unsafe_allow_html=True) ====>
 
 # <==== Code ends here ====>
